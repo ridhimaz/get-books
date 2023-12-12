@@ -1,0 +1,13 @@
+.div1{
+    color: "blue";
+    height:100vh;
+    width:20vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+#login-footer{
+    margin-bottom: 20px;
+    margin-top: auto;
+}
