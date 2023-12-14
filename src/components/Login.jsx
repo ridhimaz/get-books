@@ -5,8 +5,8 @@ import {
   Box,
   Heading, Drawer, DrawerContent, DrawerOverlay, DrawerHeader, DrawerFooter, DrawerBody
 } from '@chakra-ui/react'
+import { Link } from "react-router-dom";
 import { Icon, CloseIcon } from '@chakra-ui/icons';
-
 import React from 'react'
 import "./loginStyles.css"
 
@@ -14,31 +14,46 @@ export default function Login({ isOpen, handleOnClick }) {
 
   return (
     <>
-      <Drawer isOpen={isOpen} placement='left' size="xs"  >
+      <Drawer isOpen={isOpen} placement='left' size="xs" >
         <DrawerOverlay />
         <DrawerContent bgColor="#ffefd5">
-            <DrawerHeader display="flex" justifyContent="space-between" mt={20}>
-
-              <Heading >Nerds planet</Heading>
-              <CloseIcon  mr={20} onClick={handleOnClick} />
-
-            </DrawerHeader>
-            <DrawerBody>
-              <Box display="flex">
-                <p>Profile</p>
-                <Button>Sign in</Button>
+          <DrawerHeader display="flex" alignItems="center" justifyContent="space-between" mt={20}>
+            <Heading >Nerds planet</Heading>
+            <CloseIcon id="close-icon" onClick={handleOnClick} />
+          </DrawerHeader>
+          <DrawerBody display="flex" flexDirection="column" gap="3%">
+            <Box display="flex" gap="25%" alignItems="center">
+              <Box gap="15%" alignItems="center" display="flex">
+              <i class="fa-solid fa-user"></i>
+                <p> Profile</p>
               </Box>
-              <p>Home</p>
+              <Button colorScheme='black' size="md" bgColor="black" color="white">Sign in</Button>
+            </Box>
+            <Box gap="5%" alignItems="center" display="flex">
+              <i class="fa-solid fa-house"></i>
+              <Link to="/"><p>Home</p> </Link>
+            </Box>
+            <Box gap="5%" alignItems="center" display="flex">
+              <i class="fa-solid fa-book"></i>
               <p>Books</p>
+            </Box>
+            <Box gap="5%" alignItems="center" display="flex">
+              <i class="fa-solid fa-floppy-disk"></i>
               <p>Saved</p>
+            </Box>
+            <Box gap="5%" alignItems="center" display="flex">
+              <i class="fa-solid fa-calendar-days"></i>
               <p>Events</p>
-              <p>Join Groups</p></DrawerBody>
-
-            <p id="login-footer" mt={1000} ml={0} pl={0}>Contact us</p>
-
-
-         
-         
+            </Box>
+            <Box gap="5%" alignItems="center" display="flex">
+              <i class="fa-solid fa-people-group"></i>
+              <p>Join Groups</p>
+            </Box>
+          </DrawerBody>
+          <Box display="flex" gap="5%" alignItems="center"  mb="10%" ml="7%" >
+            <i class="fa-solid fa-handshake"></i>
+            <p  >Contact us</p>
+          </Box>
         </DrawerContent>
       </Drawer>
 

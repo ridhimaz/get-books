@@ -5,3 +5,25 @@
 #hamburgerIcon{
     position: absolute;
 }
+
+@media screen  and (max-width:415px){
+    .fs{
+        font-size: 1.5rem;
+       
+    } 
+    #search-input{
+    width:70vw;
+   
+    }  
+    #header{
+        height:"30vh"
+    }
+    .full-width{
+        width: 100%;
+        align-self:center;
+       border: none;
+    }
+    .btn-group{
+        flex-direction: column;
+    }
+}
