@@ -22,13 +22,13 @@ export default function Login({ isOpen, handleOnClick }) {
             <CloseIcon id="close-icon" onClick={handleOnClick} />
           </DrawerHeader>
           <DrawerBody display="flex" flexDirection="column" gap="3%">
-            <Box display="flex" gap="25%" alignItems="center">
-              <Box gap="15%" alignItems="center" display="flex">
-              <i class="fa-solid fa-user"></i>
+           
+              <Box gap="5%" alignItems="center" display="flex">
+                <i class="fa-solid fa-user"></i>
                 <p> Profile</p>
               </Box>
-              <Button colorScheme='black' size="md" bgColor="black" color="white">Sign in</Button>
-            </Box>
+             
+           
             <Box gap="5%" alignItems="center" display="flex">
               <i class="fa-solid fa-house"></i>
               <Link to="/"><p>Home</p> </Link>
@@ -50,7 +50,7 @@ export default function Login({ isOpen, handleOnClick }) {
               <p>Join Groups</p>
             </Box>
           </DrawerBody>
-          <Box display="flex" gap="5%" alignItems="center"  mb="10%" ml="7%" >
+          <Box display="flex" gap="5%" alignItems="center" mb="10%" ml="7%" >
             <i class="fa-solid fa-handshake"></i>
             <p  >Contact us</p>
           </Box>
