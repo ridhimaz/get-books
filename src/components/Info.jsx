@@ -7,7 +7,7 @@ export default function Info() {
    <Flex pl="5%" pr="5%"  bgColor='#ffefd5' pb={50} pt={50} textAlign="center">
        <Container>
        <Heading className="fs" fontSize="2rem" mb={0}>90 K+ </Heading>
-       <Text  mt={0} display="flex" textAlign="left" color="#ff4500">Books</Text>
+       <Text  mt={0} color="#ff4500">Books</Text>
        </Container>  <Spacer />
        <Container>
        <Heading className="fs" fontSize="2rem" mb={0}>23 K+ </Heading>
