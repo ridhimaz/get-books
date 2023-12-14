@@ -45,7 +45,7 @@ const navigate=useNavigate();
 
       {!isOpen &&
         (
-          <Box>
+          <Box display="block">
           <HamburgerIcon id="hamburgerIcon" boxSize={10} color='white' ml="10%" mt={20} onClick={handleOnClick} />
           </Box>
         )

@@ -5,7 +5,17 @@
 #hamburgerIcon{
     position: absolute;
     display: block;
-    margin-bottom: 50px;
+   top:5px;
+   left:10%;
+  
+   z-index: 2;
+}
+
+#header{
+    position: relative;
+ 
+   
+  
 }
 
 @media screen  and (max-width:415px){

@@ -18,12 +18,11 @@ const Header = ({ text, searchClick, handleInputChange }) => {
                 bgPosition="center"
                 bgRepeat="repeat"
                 display="flex" flexDirection='column' alignItems="center" justifyContent="center" >
-                <Heading className='fs' color='white' fontSize='3rem' ml="10%" mt="10%">
+                <Heading className='fs main-heading' color='white'  fontSize='3rem' ml="10%" mt="7%"> 
                     EXPLORE THE VAST WORLD OF BOOKS
                 </Heading>
-                <InputGroup mt="3vh" borderRadius={5} size="md" justifyContent="center" >
-
-                    <Input w="35vw" id="search-input" type="text" placeholder="Search..."  bgColor="white" value={text} onChange={handleInputChange} />
+                <InputGroup  id="search-input"  mt="3vh" borderRadius={5} size="md" justifyContent="center" >
+                    <Input w="35vw" type="text" placeholder="Search..."  bgColor="white" value={text} onChange={handleInputChange} />
                     <InputRightAddon bgColor="#ff4500" borderColor="#ff4500">
                        <IconButton
                             bgColor="#ff4500"
