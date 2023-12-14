@@ -4,6 +4,8 @@
 }
 #hamburgerIcon{
     position: absolute;
+    display: block;
+    margin-bottom: 50px;
 }
 
 @media screen  and (max-width:415px){
@@ -22,6 +24,7 @@
         width: 100%;
         align-self:center;
        border: none;
+      
     }
     .btn-group{
         flex-direction: column;

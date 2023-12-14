@@ -3,7 +3,7 @@ import Header from './components/Header';
 import Info from './components/Info';
 import Paragraph from './components/Paragraph';
 import { useState } from 'react';
-import { useToast} from '@chakra-ui/react';
+import { useToast,Box} from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import { Route, Routes, useNavigate} from "react-router-dom";
 import Searchpage from './components/Searchpage';
@@ -45,7 +45,9 @@ const navigate=useNavigate();
 
       {!isOpen &&
         (
+          <Box>
           <HamburgerIcon id="hamburgerIcon" boxSize={10} color='white' ml="10%" mt={20} onClick={handleOnClick} />
+          </Box>
         )
       }
       {isOpen && <Login isOpen={isOpen} handleOnClick={handleOnClick} />}
