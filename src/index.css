@@ -5,28 +5,23 @@
 #hamburgerIcon{
     position: absolute;
     display: block;
-   top:5px;
-   left:10%;
-  
-   z-index: 2;
+    top:5px;
+    left:0%;
+    z-index: 2;
+    margin: 10px;
 }
-
+#main-heading{
+    font-size: 3rem;
+}
 #header{
     position: relative;
- 
-   
-  
 }
 
 @media screen  and (max-width:415px){
     .fs{
-        font-size: 1.5rem;
-       
+        font-size: 1.5rem; 
     } 
-    #search-input{
-    width:70vw;
    
-    }  
     #header{
         height:"30vh"
     }
@@ -39,4 +34,23 @@
     .btn-group{
         flex-direction: column;
     }
+}
+@media screen and (max-width:500px) {
+    .main-heading{
+        font-size: 1rem;
+    }
+    #hamburgerIcon{
+        font-size: 2px;
+    }
+}
+@media screen  and (max-width:400px){
+    #main-heading{
+        margin-top: 20%;
+        font-size: 1.5rem;
+    }
+   
+        #input{
+            width:85%;
+        }
+    
 }

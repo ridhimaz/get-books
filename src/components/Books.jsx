@@ -28,7 +28,7 @@ export default function Books({ book }) {
             <Text>
               {truncatedDescription}
             </Text>
-            <Text color='#ff4500' fontSize='1.5rem'>
+            <Text color='#ff4500' fontSize='2rem'>
               $450
             </Text>
           </Stack>

@@ -8,6 +8,7 @@ import { HamburgerIcon } from '@chakra-ui/icons';
 import { Route, Routes, useNavigate} from "react-router-dom";
 import Searchpage from './components/Searchpage';
 
+
 function App() {
  
   
@@ -45,9 +46,9 @@ const navigate=useNavigate();
 
       {!isOpen &&
         (
-          <Box display="block">
-          <HamburgerIcon id="hamburgerIcon" boxSize={10} color='white' ml="10%" mt={20} onClick={handleOnClick} />
-          </Box>
+          <Box  style={{display:"block",backgroundColor:"yellow", width:"100%"}}>
+                <HamburgerIcon id="hamburgerIcon" boxSize={10} color='white' ml="10%" mt="600px" onClick={handleOnClick} />
+            </Box>
         )
       }
       {isOpen && <Login isOpen={isOpen} handleOnClick={handleOnClick} />}
