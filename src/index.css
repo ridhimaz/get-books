@@ -18,9 +18,7 @@
 }
 
 @media screen  and (max-width:415px){
-    .fs{
-        font-size: 1.5rem; 
-    } 
+   
    
     #header{
         height:"30vh"
@@ -34,6 +32,7 @@
     .btn-group{
         flex-direction: column;
     }
+   
 }
 @media screen and (max-width:500px) {
     .main-heading{
@@ -43,14 +42,26 @@
         font-size: 2px;
     }
 }
-@media screen  and (max-width:400px){
+@media screen  and (max-width:480px){
     #main-heading{
-        margin-top: 20%;
-        font-size: 1.5rem;
+        margin-top: 5%;
+        font-size: 1.8rem;
     }
    
         #input{
             width:85%;
         }
+        #paragraph-heading,#sub-paragraph-heading{
+            font-size: 1.5rem; 
+        } 
+        #info-events,#info-books,#info-groups{
+            font-size: 1.5rem; 
+        }
+        #main-heading{
+           
+           }
     
+}
+@media screen and (max-width:395px){
+   
 }
