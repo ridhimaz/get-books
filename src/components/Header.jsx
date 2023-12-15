@@ -19,7 +19,7 @@ const Header = ({ text, searchClick, handleInputChange }) => {
                 bgRepeat="repeat"
                 display="flex" flexDirection='column' alignItems="center" justifyContent="center" >
                     
-                <Heading  id="main-heading" color='white' mt="5%"> 
+                <Heading  id="main-heading" color='white' mt="5%" textAlign="center"> 
                     EXPLORE THE VAST WORLD OF BOOKS
                 </Heading>
                 <InputGroup  id="search-input"  mt="3vh" borderRadius={5} size="md" justifyContent="center" >
